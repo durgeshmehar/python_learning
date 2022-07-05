@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<h2>Cart</h2>
+
+{% for book in books%}
+
+<h3>{{book.id}} ) {{book.Name}}</h3>
+
+
+{% endfor %}
+{% endblock %}

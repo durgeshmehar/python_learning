@@ -1,0 +1,24 @@
+{% extends "layout.html" %} {% block body %}
+
+<h2><p><u>REGISTRANTS</u></p></h2>
+<br>
+
+<table style="margin-left: auto;margin-right: auto;">
+    <thead>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Sport</th>
+    </thead>
+    <tbody>
+        {% for reg in regi %}
+        <tr>
+            <td>{{reg.name}}</td>
+            <td>{{reg.email}}</td>
+            <td>{{reg.sport}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+
+
